@@ -1,0 +1,25 @@
+gui.safesquares.config.name=SafeSquares
+gui.safesquares.config.enabled=Enabled
+gui.safesquares.config.enabled.desc=Enables or disables SafeSquares completely.
+gui.safesquares.config.render_distance=Render distance
+gui.safesquares.config.render_distance.desc=How many blocks away from the player to check for safe blocks.
+gui.safesquares.config.update_rate=Update rate
+gui.safesquares.config.update_rate.desc=How often blocks should be checked, in ticks.
+gui.safesquares.config.safe_sky_enabled=Show spot safety under the sky
+gui.safesquares.config.safe_sky_enabled.desc=If enabled, blocks that are unsafe under the sky will be highlighted.
+gui.safesquares.config.safe_sky_color=Sky unsafe color
+gui.safesquares.config.safe_sky_color.desc=Color of blocks that are unsafe under the sky (hex code, #RRGGBB or #AARRGGBB).
+gui.safesquares.config.safe_dark_enabled=Show spot safety in darkness
+gui.safesquares.config.safe_dark_enabled.desc=If enabled, blocks that are unsafe in darkness will be highlighted.
+gui.safesquares.config.safe_dark_color=Unsafe color
+gui.safesquares.config.safe_dark_color.desc=Color of blocks that are unsafe in darkness (hex code, #RRGGBB or #AARRGGBB).
+gui.safesquares.config.cross_scale=Cross scale
+gui.safesquares.config.cross_scale.desc=Scale of the cross, relative to the size of the block (1).
+gui.safesquares.config.cross_epsilon=Cross epsilon
+gui.safesquares.config.cross_epsilon.desc=How high above the block to render the cross, relative to the size of the block (1).
+gui.safesquares.config.cross_line_width=Cross line width
+gui.safesquares.config.cross_line_width.desc=Thickness of the line, in pixels.
+gui.safesquares.config.safe_light_level=Safe light level
+gui.safesquares.config.safe_light_level.desc=Light level considered safe from monster spawns (default 7).
+
+key.@.toggle=Toggle SafeSquares

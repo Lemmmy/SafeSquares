@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "safesquares",
+  "version": "${version}",
+
+  "name": "SafeSquares",
+  "description": "Highlights blocks that mobs can spawn on in the world. Inspired by Zombe's Modpack's 'safe' mod.",
+  "authors": [
+    "Lemmmy"
+  ],
+  "contact": {
+    "sources": "https://github.com/Lemmmy/SafeSquares"
+  },
+
+  "license": "MIT",
+  "icon": "assets/safesquares/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [],
+    "stationapi:event_bus_client": [
+      {
+        "adapter": "kotlin",
+        "value": "sh.lem.safesquares.SafeSquares"
+      }
+    ],
+    "stationapi:event_bus_server": [],
+    "gcapi3": [
+      {
+        "adapter": "kotlin",
+        "value": "sh.lem.safesquares.SafeSquares"
+      }
+    ]
+  },
+
+  "mixins": [
+    "safesquares.mixins.json"
+  ],
+
+  "accessWidener": "safesquares.accesswidener",
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": "2.*",
+    "fabric-language-kotlin": "*"
+  },
+  "recommends": {
+    "modmenu": "*"
+  }
+}
