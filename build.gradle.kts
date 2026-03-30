@@ -159,6 +159,7 @@ tasks.withType<Jar> {
     changelog.set("Release notes can be found on the [GitHub repository](https://github.com/${gitRepo}/commits/${libs.versions.minecraft.get()}).")
     gameVersions.add(libs.versions.minecraft.get())
     loaders.add("babric")
+    loaders.add("fabric")
 
     syncBodyFrom.set(provider {
       file("README.md").readText()
