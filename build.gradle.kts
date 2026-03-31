@@ -155,7 +155,7 @@ tasks.withType<Jar> {
     versionNumber.set("${libs.versions.minecraft.get()}-$modVersion")
     versionName.set(modVersion)
     versionType.set("release")
-    uploadFile.set(tasks.jar)
+    uploadFile.set(tasks.remapJar)
     changelog.set("Release notes can be found on the [GitHub repository](https://github.com/${gitRepo}/commits/${libs.versions.minecraft.get()}).")
     gameVersions.add(libs.versions.minecraft.get())
     loaders.add("babric")
@@ -177,8 +177,6 @@ tasks.withType<Jar> {
   tasks.publish { dependsOn(tasks.modrinth) }
 }
 
-val mavenUsername: String? = System.getenv("MAVEN_USERNAME")
-val mavenPassword: String? = System.getenv("MAVEN_PASSWORD")
 publishing {
   publications {
     register("mavenJava", MavenPublication::class) {

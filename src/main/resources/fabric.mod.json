@@ -37,7 +37,7 @@
     "safesquares.mixins.json"
   ],
 
-  "accessWidener": "safesquares.accesswidener",
+  "accessWidener": "safesquares.classTweaker",
 
   "depends": {
     "minecraft": "1.0.0-beta.7.3",
