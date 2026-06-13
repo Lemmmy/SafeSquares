@@ -41,7 +41,7 @@ kotlin {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/safesquares.accesswidener")
+	accessWidenerPath = file("src/main/resources/safesquares.classtweaker")
 
 	runs {
 		register("testClient") {
